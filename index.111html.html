@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register new Staff</title>
+</head>
+<body>
+  <h3>Register new Staff</h3>
+  <form action="/api/register" method="POST">
+    Username: <input type="text" name="username"><br><br>
+    Password: <input type="password" name="password"><br><br>
+    Full Name: <input type="text" name="fullname"><br><br>
+    Email: <input type="email" name="email"><br><br>
+    Phone Number: <input type="text" name="phone"><br><br>
+    Address: <input type="text" name="address"><br><br>
+    Designation: 
+    <input type="radio" name="designation" value="Project Supervisor" checked> Project Supervisor
+    <input type="radio" name="designation" value="Others"> Others:
+    <input type="text" name="other"><br><br>
+    
+    Department: 
+    <select name="department">
+      <option>Information Technology</option>
+    </select><br><br>
+    
+    Hotel Branch: 
+    <select name="branch">
+      <option>Soyeye</option>
+    </select><br><br>
+
+    <input type="submit" value="SUBMIT">
+    <input type="reset" value="RESET">
+  </form>
+</body>
+</html>
